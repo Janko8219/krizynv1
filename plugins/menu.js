@@ -8,24 +8,24 @@ const defaultMenu = {
   before: `
 ╭───◪ 〔 ${namabot} 〕 
 ⬡ ${ucapan()}
-⬡ Hello bro👋
+⬡ 𝙝𝙚𝙡𝙡𝙤 𝙗𝙧𝙤 👋
 ╰────────⬣
 ╭───◪ 〔  𝙇 𝙄 𝙈 𝙄 𝙏  〕
-┃⬡ Tersisa *%limit Limit*
-┃⬡ Role *%role*
-┃⬡ Level *%level (%exp / %maxexp)* 
+┃⬡ 𝐓𝐞𝐫𝐬𝐢𝐬𝐚 *%limit Limit*
+┃⬡ 𝐑𝐨𝐥𝐞 *%role*
+┃⬡ 𝐥𝐞𝐯𝐞𝐥  *%level (%exp / %maxexp)* 
 ┃⬡ [%xp4levelup]
 ┃⬡ %totalexp XP secara Total
 ╰────────⬣
 ╭───◪ 〔 𝙏𝙄𝙈𝙀 𝘼𝙉𝘿 𝘿𝘼𝙏𝙀 〕
-┃⬡ Hari : *%week %weton* 
-┃⬡ Tanggal : *%date*
-┃⬡ Tanggal Islam : *%dateIslamic*
-┃⬡ Waktu: *%time*
+┃⬡ 𝐝𝐚𝐲 : *%week %weton* 
+┃⬡ 𝐝𝐚𝐭𝐞  : ${tanggal}
+┃⬡ 𝐈𝐬𝐥𝐚𝐦 : *%dateIslamic*
+┃⬡ 𝐭𝐢𝐦𝐞 : ${time}
 ╰────────⬣
 ╭───◪ 〔  𝘿𝘼𝙏𝘼𝘽𝘼𝙎𝙀  〕
-┃⬡ Uptime: *%uptime (%muptime)*
-┃⬡ Database: %rtotalreg dari %totalreg 
+┃⬡ 𝐔𝐩𝐭𝐢𝐦𝐞: *%uptime (%muptime)*
+┃⬡ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞: %rtotalreg dari %totalreg 
 ╰────────⬣
 
 ────֍ 〔 𝗙𝗜𝗧𝗨𝗥 𝗕𝗢𝗧 〕 ֍────
@@ -230,18 +230,18 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 Hello bro👋, ${name}`.trim(),
           "description": `
 ┏━━〔 𝙎 𝙏 𝘼 𝙏 𝙐 𝙎 〕━֍
-┃⬣ Aktif selama *${uptime}*
-┃⬣ Battary *${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
-┃⬣ *${Object.keys(global.db.data.users).length}* Pengguna
-┃⬣ *${totaljadibot.length}* Jadibot
-┃⬣ *${conn.blocklist.length}* Terblock
-┃⬣ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-┃⬣ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┃⬣ 𝐀𝐜𝐭𝐢𝐯𝐞 𝐝𝐮𝐫𝐢𝐧𝐠 *${uptime}*
+┃⬣ 𝐁𝐚𝐭𝐭𝐚𝐫𝐲: *${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
+┃⬣ 𝐛𝐨𝐭 𝐧𝐚𝐦𝐞: 𝒎𝒖𝒏𝒂𝒗𝒊𝒓
+┃⬣ 𝐫𝐮𝐧 𝐭𝐢𝐦𝐞: ${runtime(process.uptime())}
+┃⬣ 𝐨𝐰𝐧𝐞𝐫 𝐧𝐚𝐦𝐞: 𝒎𝒖𝒏𝒂𝒗𝒊𝒓 
+┃⬣ 𝐬𝐩𝐞𝐞𝐝: 0.0029 second
+┃⬣ 𝐨𝐰𝐧𝐞𝐫 𝐧𝐨: 918590822912
 ┗━━━━━━━━━━━━━━֍
 ┏━━〔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏 𝙊𝙒𝙉𝙀𝙍 〕━֍
-┃⬣ IG : instagram.com/_munavir._
-┃⬣ NO : http://wa.me/918590822912
-┃⬣ TT : tiktok.com/
+┃⬣ 𝐢𝐠 : instagram.com/_munavir._
+┃⬣ 𝐧𝐨 : http://wa.me/918590822912
+┃⬣ 𝐟𝐛 : munavir
 ┃   
 ┃⬣ 𝘿𝙊𝙉'𝙏 𝙁𝙊𝙍𝙂𝙀𝙏 𝙏𝙊 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂!
 ┗━━━━━━━━━━━━━━֍`.trim(),
@@ -252,7 +252,7 @@ Hello bro👋, ${name}`.trim(),
                             {
                                 
                                 "rows": [{
-                                    "title": `[ ☇ ] ꜱ ᴇ ᴍ ᴜ ᴀ  ᴘ ᴇ ʀ ɪ ɴ ᴛ ᴀ ʜༀ`,
+                                    "title": `[ ☇ ] ꜱ ᴇ ᴍ ᴜ ᴀ  ᴘ ᴇ ʀ ɪ ɴ ᴛ ᴀ ʜ`,
 									"description": "✓ 𝙈𝙚𝙢𝙗𝙚𝙧𝙞𝙠𝙖𝙣 𝙎𝙚𝙢𝙪𝙖 𝙁𝙞𝙩𝙪𝙧 𝘽𝙤𝙩ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×",
 									"rowId": ".? all"
 								}, {
@@ -388,8 +388,7 @@ Hello bro👋, ${name}`.trim(),
                                     "rowId": ".owner"
                                 }, {
                                     "title": "[ ☇ ] ᴅ ᴏ ɴ ᴀ ꜱ ɪ",
-                                    "description": "✓ 𝘿𝙤𝙣𝙖𝙨𝙞 𝙪𝙣𝙩𝙪𝙠 𝙢𝙚𝙣𝙙𝙪𝙠𝙪𝙣𝙜 𝙗𝙤𝙩 𝙖𝙜𝙖𝙧 𝙖𝙠𝙩𝙞𝙛 𝙨𝙚𝙡𝙖𝙡𝙪",
-                                    "rowId": ".donasi"
+                                    "description": "✓ 𝐝𝐨𝐧𝐚𝐭𝐞 𝐭𝐨 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 𝐛𝐨𝐭𝐬 𝐭𝐨 𝐛𝐞 𝐚𝐥𝐰𝐚𝐲𝐬 𝐚𝐜𝐭𝐢𝐯𝐞                                   "rowId": ".donasi"
                                 }, {
                                     "title": "ᴋ ᴀ ᴛ ᴀ  ᴘ ᴇ ɴ ᴜ ᴛ ᴜ ᴘ",
                                     "description": "✓ 𝙏𝙚𝙧𝙞𝙢𝙖𝙠𝙖𝙨𝙞𝙝 𝙪𝙣𝙩𝙪𝙠 𝙪𝙨𝙚𝙧 𝙮𝙖𝙣𝙜 𝙩𝙚𝙡𝙖𝙝 𝙢𝙚𝙣𝙜𝙜𝙪𝙣𝙖𝙠𝙖𝙣 𝙗𝙤𝙩, 𝙟𝙞𝙠𝙖 𝙖𝙙𝙖 𝙠𝙚𝙨𝙖𝙡𝙖𝙝𝙖𝙣 𝙖𝙩𝙖𝙪 𝙥𝙚𝙧𝙢𝙞𝙣𝙩𝙖𝙖𝙣 𝙗𝙞𝙨𝙖 𝙘𝙝𝙖𝙩 𝙠𝙚 𝙣𝙤𝙢𝙤𝙧 𝙤𝙬𝙣𝙚𝙧",
@@ -515,18 +514,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "*Dinihari Ngab*👻"
+  res = "*Early morning*👻"
   if (time >= 4) {
-    res = "*Pagi Ngab*🌤"
+    res = "*Good Morning*🌤"
   }
   if (time > 10) {
-    res = "*Siang Ngab*🌞"
+    res = "*Afternoon*🌞"
   }
   if (time >= 15) {
-    res = "*Sore Ngab*🌝"
+    res = "*Afternoon*🌝"
   }
   if (time >= 18) {
-    res = "*Malam Ngab*🌚"
+    res = "*Night*🌚"
   }
   return res
 }
